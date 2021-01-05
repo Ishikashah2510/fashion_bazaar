@@ -24,5 +24,5 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', hv.home_page, name='homepage'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    url(r'^$', hv.go_to_home_page, name='homepage'),
+]
